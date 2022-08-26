@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EEI3346 LAB Test 04</title>
+
+  <link rel="stylesheet" type="text/css" href="lab4.css">
+</head>
+<body>
+     <div>
+        <h1 style="text-align : center;">Calculator</h1>
+      </div>
+        <div style="text-align : center; border : 5px solid black; width : 30%; margin-left :35%; background-color: rgb(188, 143, 143);" >
+
+
+          <p id="display" style= "background-color : rgb(21, 255, 0);">You have selected Addition</p>
+
+          <select id="selection" onchange="selection()">
+            <option value="Addition">Add</option>
+            <option value="Subsitute">Sub</option>
+            <option value="Multipication">Mul</option>
+            <option value="Divition">Div</option>
+          <select><br>
+
+
+          <input id="n1" type="text" placeholder="Enter a number"><br>
+          <input id="n2" type="text" placeholder="Enter a number"><br>
+          <input id="n3" type="text" placeholder="Enter a number"><br>
+
+          <p id="answer"></p><br>
+
+
+          <button onclick="calculate()" >Calculate</button>
+
+          <button onclick="empty()">Clear</button>
+          </div>
+
+
+          <script type="text/javascript" src="lab4.js"></script>
+
+</body>
+</html>
